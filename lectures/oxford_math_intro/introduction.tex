@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{hyperref}
+\usepackage{enumerate}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{remark}{Remark}
+
+\title{Introduction to University Mathematics}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Lecture 1}
+\subsection{The natural numbers and induction}
+
+\begin{definition}
+  \normalfont
+  A \underline{natural number} is a member of the sequence 0, 1, 2, ... formed by starting from 0 and successively adding 1. Set of all natural number is written as $\mathbb{N} = \{1,2,...\}$.
+\end{definition}
+
+\begin{remark}
+  Inclusion of 0 in natural number is not universal. Sometimes it is not included.
+\end{remark}
+
+Natural number can be added and multiplied to produce natural numbers . i.e. If $m,n\in\mathbb{N}$ then $m+n,m*n\in\mathbb{N}$ ($m*n$ is often written as $mn$). 
+
+0 and 1 are two special natural numbers because they are additive and multiplicative \underline{identities}. i.e. $\forall n\in\mathbb{N}, n + 0 = n \text{ and } n * 1 = n$. The natural numbers have ordering so it makes sense to have the notion comparison between two natural numbers. All the mathematical objects do not enjoy this property (for instance matrices).
+
+\begin{definition}
+  \normalfont
+  Let $m, n \in\mathbb{N}$. We write $m\leq n$ to mean that $\exists k \in \mathbb{N}:m+k = n$.
+\end{definition}
+
+\begin{theorem}
+  \normalfont
+  (Principle of mathematical induction) Let $P(n)$ be a family of statements indexed by the natural numbers. Suppose:
+  \begin{enumerate}[i.]
+    \item $P(0)$ is true, and
+    \item $\forall n\in\mathbb{N}$, if $P(n)$ and $P(n+1)$ is true
+  \end{enumerate}
+  then $P(n)$ is true for all $n\in\mathbb{N}$.
+\end{theorem}
+
+\begin{proposition}
+  \normalfont
+  $\forall n \in N$, \[\sum_{k=0}^{n}k = \frac{n(n+1)}{2}.\]
+\end{proposition}
+
+\begin{proof}
+\end{proof}
+
+\end{document}
