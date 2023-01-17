@@ -55,6 +55,108 @@ Natural number can be added and multiplied to produce natural numbers . i.e. If 
 \end{proposition}
 
 \begin{proof}
+  $P(0)$ is true since for $n = 0$, LHS = RSH = 0.
+
+  Suppose $P(n)$ is true, then
+  $$
+  \sum^{n+1}_{k=0} = \sum^{n}_{k=0}k + (n + 1) = \frac{n(n+1)}{2} + (n+1) = \frac{(n+1)(n+2)}{2}
+  $$
+
+  So $P(n+1)$ is also true. Therefore by induction, $P(n)$ is true for all $n\in N$
 \end{proof}
+
+\begin{theorem}
+  \normalfont
+  (Strong induction) Let $P(n)$ be a family of statements indexed by $N$. Suppose
+  \begin{enumerate}[i.]
+    \item $P(0)$ is true, and 
+    \item $\forall n\in \mathbb{N}$, if $P(0), P(1),\, ...\,, P(n)$ are true,
+  \end{enumerate}
+  then $P(n+1)$ i true. This implies $P(n)$ is true $\forall n\in N$.
+\end{theorem}
+
+\begin{proof}
+  Define $Q(n)$ to be te statement `$P(k)$ is true for $k=0,1,,\, ..., n$'. Then we know that
+  \begin{enumerate}[i.]
+    \item $Q(0)$ is true, and
+    \item $\forall n\in \mathbb{N}$, if $Q(n)$ is true, then $Q(n+1)$ is true.
+  \end{enumerate}
+  So, by induction, $Q(n)$ is true for all $n\in \mathbb{N}$. Hence $P(n)$ is true for all $n\in\mathbb{N}$.
+\end{proof}
+
+\begin{proposition}
+  Every natural number greater than 1 can be expressed as a product of one or more primes.
+\end{proposition}
+
+\begin{proof}
+
+  Let $P(n)$ be the statement that $n$ can be expressed ad a product of primes. $P(2)$ is true since 2 is a prime itself.
+
+  Let $n>2$, and suppose that $P(n)$ holds for all $m<n$. If $n$ is prime, then $P(n)$ is true. If $n$ is not prime, then $n = rs$ for some $r,s \in\mathbb{N}$, with $r,s < n$. By inductive hypothesis $r$ and $s$ can be expressed as products of primes, and hence so can $n = rs$. So $P(n)$ is true.
+
+  By strong induction, P(n) holds for all $n\in\mathbb{N}$.
+\end{proof}
+
+\subsection{Addition and well-ordering principle of $\mathbb{N}$}
+
+\begin{definition}
+  (Addition of $\mathbb{N}$) Addition ($+$) is an operation that $\forall m\in \mathbb{N}$,
+  
+  \begin{enumerate}[i.]
+    \item $m + 0 = m$
+    \item $\forall n\in \mathbb{N}, m + (n + 1) = (m + n) + 1$
+  \end{enumerate}
+\end{definition}
+
+\begin{proposition}
+  Addition is \underline{associative}, i.e. $\forall x, y, z \in\mathbb{N}$
+  
+  \begin{equation}
+    \label{eqn_associative}
+    x + (y + z) = (x + y) + z
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  For $z = 0$,
+
+  \begin{equation*}
+    \begin{split}
+      \textnormal{LHS} &= x + (y + 0)\quad\quad[using (i) from definition]\\
+      &= (x+y) + 0\\
+      &= \textnormal{RHS}\\
+    \end{split}
+  \end{equation*}
+
+  Suppose Eqn\,.(\ref{eqn_associative}) holds for $z = n$. Then for $z = n+1$,
+
+  \begin{equation*}
+    \begin{split}
+      \textnormal{LHS} &= x + (y + (n + 1))\quad\quad[using (ii) from definition]\\
+      &= (x + (y + n)) + 1\\
+      &= ((x + y) + n) + 1\\
+      &= (x + y) + (n + 1)\\
+      &= \textnormal{RHS}\\
+    \end{split}
+  \end{equation*}
+
+  We see that Eqn\,.(\ref{eqn_associative}) holds for $z=n+1$. Therefore, by induction, it holds for all $z\in\mathbb{N}$.
+\end{proof}
+
+\begin{proposition}
+  (Well-ordering property of the natural numbers)
+  Evert non-empty subset of $\mathbb{N}$ has a least element.
+\end{proposition}
+
+\begin{proof}
+  Assume, for a contradiction, that $S$ is a non-empty subset of $\mathbb{N}$ that does not have a least element. Consider $S^{*} = \{n\in\mathbb{N} : n \notin S\}$.
+
+  Note that $0\in S^{*}$, since  $0\notin S^{*}$ else it would be the least element by default.
+
+  if $0,1,\,...\,,n\in S^{*}$, then $n+1\notin S$, else it could be the lease element. So $n+2\in S^{*}$. By strong induction, $n\in S^{*}$ for all $n\in N$. Hence $S$ is empty, a contradiction.
+\end{proof}
+
+\section{Lecture 2}
+\subsection{The binomial theorem and an introduction to sets}
 
 \end{document}
