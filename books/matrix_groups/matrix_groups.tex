@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{enumitem}
+
+\setlength{\parskip}{5pt}
+
+\title{Matrix Groups for Undergraduates}
+\author{Kristopher Tapp}
+\date{January 31, 2023}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section*{Prof. Robert's book review}
+David P. Roberts\\
+01/3/2006\\
+
+The back cover of \textit{Matrix Groups for Undergraduates} says it is a text for a one-semester upper-level undergraduate course which will assist in preparing students for graduate school. A course based on this text would indeed be helpful to many students.
+
+Tapp's book weighs in at a very slender 169 pages. Its chapter list gives a good indication of the content and level:
+ 
+Why study matrix groups?
+\begin{enumerate}[noitemsep]
+  \item Lie algebras
+  \item Matrices
+  \item Matrix exponentiation
+  \item All matrix groups are real matrix groups
+  \item Matrix groups are manifolds
+  \item The orthogonal groups
+  \item The Lie bracket
+  \item The topology of matrix groups
+  \item Maximal tori
+\end{enumerate}
+
+The preface answers its title question in a very enticing way: applications from graphic programming to quantum computing are mentioned. The chapters themselves mostly focus on basics, with only occasional brief revisiting of the intriguing applications.
+
+Here are four of the ways that the author keeps the text at an undergraduate level:
+
+\begin{enumerate}
+  \item There is considerable emphasis throughout on \textit{examples}. Since the classical examples of matrix groups dominate the theory anyway, the focus on examples really has no downside. Throughout the book the author is careful to treat the reals $\mathbb{R}$, the complexes $\mathbb{C}$, and the quaternions $\mathbb{H}$ as uniformly as possible. Thus he is able to introduce orthogonal groups $O(n)$, unitary groups $U(n)$, and symplectic groups $Sp(n)$ in a parallel way. Theorem 9.31, appropriately stated without proof, forms a satisfying conclusion to the course. It tells readers that the three sequences they have been intensively studying, together with five exceptional groups they have not seen, form the building blocks of all compact matrix groups.
+  \item There is further emphasis on \textit{low dimensions} and \textit{visibility}. The first chapter explains in intuitive terms why the group $SO(3)$ of rotations of a globe is three-dimensional. It previews the idea of maximal torus by explaining, ``Rotating the globe around the axis through the North and South Pole provides a 'circle's worth' of elements of $SO(3)$.'' There are helpful pictures throughout the book. Even in the second-to-last chapter, the low-dimensional isomorphism from $Sp(1)$ to $SU(2)$ and the double cover from $SU(2)$ to $SO(3)$ play a prominent role.
+  \item There is review appropriate to the intended readers. Aspects of linear algebra over $\mathbb{R}$ and $\mathbb{C}$ are reviewed in the process of presenting new material corresponding to $\mathbb{H}$. Chapters 4 and 7 are almost entirely devoted to background material, on point-set topology and manifolds respectively; in each case, everything takes place in ambient Euclidean spaces $\mathbb{R}^n$. Even in the last chapter, a theme is that diagonalization theorems of linear algebra are being revisited.
+  \item Each chapter concludes with approximately 15 exercises. Some are theoretical, like 4.1 through 4.6, each of which has the form ``Prove Proposition 4.x.'' Many reinforce theoretical topics by considering them in examples, such as Exercise 6.5 which asks students to describe all one-parameter subgroups of $GL_{1}(\mathbb{C})$ and draw some in the x-y plane. The many exercises would support a course where students regularly present material in class.
+\end{enumerate}
+
+Tapp writes towards the end of his preface, ``I believe that matrix groups should become a more common staple of the undergraduate curriculum; my hope is that this text will help allow a movement in that direction.'' With his gently written text and strictly bounded goals, he has succeeded.
+
+\section{Matrices}
+\subsection*{Exercises}
+
+\begin{enumerate}
+\item Describe a natural 1-to-1 correspondence between elements of $SO(3)$ and elements of 
+  $$T^{1}S^{2} = \{(p,v)\in\mathbb{R}^{3}\times\mathbb{R}^{3}|\,|p|=|v|=1 \textnormal{ and } p\perp v\},$$
+  which can be thought of as the collection of all unit-length vectors $v$ tangent to all points $p$ of $S^{2}$.
+\end{enumerate}
+
+  
+\end{document}
