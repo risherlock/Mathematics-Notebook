@@ -1,0 +1,146 @@
+\documentclass{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{amsmath, amssymb}
+\author{Leonard Eugene Dickson}
+\date{}
+
+\setlength{\parskip}{2pt}
+
+\title{Algebra of real quaternions;\\its unique place among algebras\footnote{Excerpt from the book \textit{Linear Algebras (1914) by Leonard Eugene Dickson}}}
+
+\begin{document}
+\maketitle
+
+We shall determine all linear associative algebras over the field of real numbers such that a product is zero only when one factor is zero. This determination if of decided interest and yields an important result on real simple algebras.
+
+If $x$ is a given number $\neq 0$, $xx' = 0$;  similarly, $x'x = 0$ implies $x' = 0$. Hence neither $\Delta(x)$ nor $\Delta'(x)$ is zero when $x\neq = 0$. Thus the algebra contains a principal unit which we shall denote by 1. If every number is a real multiple of 1, the algebra is the field of all real numbers. Excluding this case, we may take the units to be $1, e_{1},\,..,e_{n-1}$, where $n>1$. Then any number $A$ of the algebra is a root of an equation $p(x) = 0$ of degree $\leq n$ with real coefficients. By the fundamental theorem of algebra, $p(x)$ equals a product $f_{1}(x)\,f_{2}(x)\,...$ of linear or quadratic factors with real coefficients. Then $f_{1}(A)\,f_{2}(A)\,...=0$. Thus one factor is zero. Hence any number of the algebra is a root of a quadratic equation with real coefficients.
+
+If $e^{2}+2re+s=0$, then $(e+r)^{2}=r^{2}-s$. Hence after adding a real constant to each $e_{i}$, we may assume that the square of each new unit $e_{i}$ is a real number. If $e^{2}_{1}$, is a real number $\geq 0$,
+
+$$
+0 = e_{1}^{2}-r^{2}=(e_{1}-r)(e_{1}+r).\quad\quad e_{1}=\pm r,
+$$
+
+whereas $e_{1}$ and 1 are linearly independent. Thus $e_{1}^{2}=-t^{2}$, where $t$ is a real number $\neq 0$. Set $E_{e} = \frac{e_{1}}{t}$. Then $E_{1}^{2} = -1$. If $n=2$, the new units are $1$, $E_{1}=i$, and the algebra is the system of ordinary complex numbers. Next, let $n>2$. Then we may take the units to be $1,I,J,\,...,$ where\footnote{Although $I^{2}=J^{2}$, it does not follow that $(I-J)(I+J)=0,\,I=\pm J$.} 
+
+\begin{equation}
+  \label{eqn_complex_squares}
+  I^{2}=-1,\quad\quad J^{2}=-1,\,...
+\end{equation}
+
+Since $I\pm J$ is a root of a quadratic equation,
+
+\begin{equation*}
+  \begin{split}
+    (I+J)^{2}&\equiv -2+IJ+JI=r(I+J)+r_{1}, \\
+    (I-J)^{2}&\equiv -2-IJ-JI=s(I-J)+s_{1}, \\
+  \end{split}
+\end{equation*}
+
+where $r$, $r_{1}$, $s$, $s_{1}$ are real. Adding, we get
+
+$$
+(r+s)I+(r-s)J+r_{1}+s_{1}+4=0.
+$$
+
+But 1, $I$, $J$ are linearly independent with respect to the field of reals. Hence $r=s=0$. Thus
+
+\begin{equation}
+  \label{eqn_linear_independance}
+  IJ+JI = 2c\quad\quad\quad \textnormal(c real)
+\end{equation}
+
+The product $IJ$ is linearly independent of 1, $I$, $J$ with respect to the field of reals. For, If
+
+$$
+IJ=r+sI+tJ,
+$$
+
+where $r$, $s$, $t$ are real, then
+
+$$
+(I-t)\left(J+\frac{r+st}{t^{2}+1}++\frac{rt-s}{t^{2}+1}\right) = 0,
+$$
+
+whereas neither factor is zero. Hence we may take
+
+\begin{equation}
+  \label{eqn_fourth_unit}
+  IJ=k
+\end{equation}
+
+as the fourth unit. In view of this choice of $K$, we do not know that $K^{2}=-1$, as in (\ref{eqn_complex_squares}). But by (\ref{eqn_complex_squares})--(\ref{eqn_fourth_unit}),
+
+\begin{equation}
+  \label{eqn_35}
+  \begin{split}
+    K^{2}=I(JI)&=I(2c-IJ)J=2cK-1,\\
+    (K-c)^{2}&=c^{2}-1<0
+  \end{split}
+\end{equation}
+
+For, if $c^{2} \geq 1$, $K-c$, and hence $K$, would be real.
+
+We make the real transformation of units
+
+$$
+i=I,\quad j=\frac{J+cI}{\sqrt{1-c^{2}}},\quad k=\frac{K-c}{1-c^{2}}.
+$$
+
+Then $ij=k,\,ji=-k$. By (\ref{eqn_35}), $k^{2}-1$. By (\ref{eqn_complex_squares}) and (\ref{eqn_linear_independance}), $i^{2}=-1$, $j^{2}=-1$. Then the associative law gives
+
+\begin{equation*}
+  \begin{split}
+    ik&=i(ij)=-j,\quad ki=(ij)i=-ik=j, \\
+    kj&=(ij)j=-i,\quad jk=j(ij)=-kj=i.
+  \end{split}
+\end{equation*}
+
+The resulting algebra, over the filed of reals, with the four units 1, $i$, $j$, $k$ and the multiplication table
+
+$$
+i^{2}=j^{2}=k^{2}=-1,\quad ij=k,\quad ji=-k,
+$$
+$$
+jk=i,\quad kj=-i,\quad ki=-j,
+$$
+
+is called the algebra $\mathbb{Q}$ of \textit{real quaternions}\footnote{W. R. Hamilton, \textit{Trans. Irish Acad.,} vol. 21 (1848), p. 199 [1843]; \textit{Lectures}}.
+
+FInallt, suppose that our algebra contains a number $\lambda$ not in this sub-algebra $Q$. Since $\lambda$ satisfies a quadratic equation with real coefficients, we may derive as at the outset a number $l$, not in $\mathbb{Q}$, such that $l^{2}=-1$. By proof leading to (\ref{eqn_linear_independance})m
+
+$$
+il+li=c_{1},\quad jl+lj=c_{2},\quad kl+lk=c_{3},
+$$
+
+where the $c$'s are real constants. Then
+
+$$
+lk = (li)j=(c_{1}-il)j=c_{1}j-i(c_{2}-jl)=c_{1}i-c_{2}i+kl,
+$$
+$$
+2kl=c_{3}+c_{2}i-c_{1}j.
+$$
+
+Multiply each term of the latter by $k$ on the left. Thus
+
+$$
+-2l=c_{3}k+c_{2}j+c_{1}i.
+$$
+
+But $l$ was not in $\mathbb{Q}$. We therefore have that
+\\
+\\
+\textbf{Theorem.}\footnote
+{
+ Frobenius, \textit{Crelle}, vol. 84 (1878), p. 59; C. S. Peirce, \textit{Amer. Jour. Math.},4 (1881), p. 225;
+ E. Cartan, \textit{Ann. Fac. sc. Toulouse}, vol. 12 (1898), B, p. 82;
+ F. X. Grissemann, \textit{Monatshefte Math. Phys.}, vol. 11 (1900), pp. 132--147 (the last a slight modification of the proof by Frobenius).
+ The remarkably simple proof in the text is due to the writer and was outlined by him in \textit{Trans. Amer. Math. Soc.}, vol. 15 (1914), p. 39.
+ }\textit
+{
+  The only linear associative algebras over the field of reals, in which a product is zero only when one factor is zero, are the field of reals, the field of ordinary complex numbers, and the algebra of real quaternions.
+}
+
+
+\end{document}
