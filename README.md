@@ -1,5 +1,10 @@
 # Mathematics-Notebook
 
+<p align="center">
+<em>If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.</em></br>
+<strong>John von Neumann</strong>
+ </p>
+ 
 ### giants: Talks and interviews
 1. John von Neumann - The mathematician
 2. Cornelius Lanczos - Video interview (1972)
